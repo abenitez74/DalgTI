@@ -11,6 +11,11 @@
           <xpath expr="//field[@name='requested_by']" position="attributes">
                <attribute name = "domain">[('user_id', '=', uid)]</attribute>
           </xpath>
+          <xpath expr="//field[@name='name']" position="attributes">
+               <attribute name = "readonly">1</attribute>
+          </xpath>
+
+
       </field>
     </record>
 </odoo>
