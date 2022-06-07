@@ -14,6 +14,9 @@
           <xpath expr="//field[@name='name']" position="attributes">
                <attribute name = "readonly">1</attribute>
           </xpath>
+          <xpath expr="//button[@name='369']" position="attributes">
+              <attribute name="groups">purchase_request.group_purchase_request_manager</attribute>
+          </xpath>
 
 
       </field>
