@@ -6,9 +6,10 @@
       <field name="inherit_id" ref="purchase.purchase_order_form"/>
       <field name="arch" type="xml">
 
-          <xpath expr="//button[@name='action_create_invoice']" position="attributes">
-              <attribute name="groups">account.group_account_invoice</attribute>
+          <xpath expr="//button[@name='action_create_invoice']" position="replace">
+              <button name="action_create_invoice" string="Create Bill" type="object" context="{'create_bill':True}" attrs="{'invisible': ['|', '|', ('state', 'not in', ('purchase', 'done')), ('invoice_status', 'not in', ('no', 'invoiced')), ('order_line', '=', [])]}" data-hotkey="w" groups="account.group_account_invoice"/>
           </xpath>
+
       </field>
     </record>
 </odoo>
