@@ -15,7 +15,7 @@
                <attribute name = "readonly">1</attribute>
           </xpath>
           <xpath expr="//button[@name='369']" position="attributes">
-              <attribute name="groups">purchase_request.group_purchase_request_manager</attribute>
+              <attribute name="groups">purchase.group_purchase_user</attribute>
           </xpath>
       </field>
     </record>
