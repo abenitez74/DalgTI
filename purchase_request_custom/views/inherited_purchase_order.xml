@@ -10,6 +10,11 @@
               <attribute name="groups">account.group_account_invoice</attribute>
           </xpath>
 
+          <xpath expr="//button[@name='confirm_reminder_mail']" position="replace">
+              <button name="confirm_reminder_mail" string="Confirm Receipt Date" type="object" attrs="{'invisible': ['|','|', ('state', 'not in', ('purchase', 'done')), ('mail_reminder_confirmed', '=', True), ('date_planned', '=', False)]}" groups="stock.group_stock_manager" data-hotkey="o"/>
+          </xpath>
+
+
       </field>
     </record>
 </odoo>
