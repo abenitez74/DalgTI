@@ -17,8 +17,6 @@
           <xpath expr="//button[@name='369']" position="attributes">
               <attribute name="groups">purchase_request.group_purchase_request_manager</attribute>
           </xpath>
-
-
       </field>
     </record>
 </odoo>
