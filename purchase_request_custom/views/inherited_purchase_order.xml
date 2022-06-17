@@ -14,11 +14,11 @@
               <button name="confirm_reminder_mail" string="Confirm Receipt Date" type="object" attrs="{'invisible': ['|','|', ('state', 'not in', ('purchase', 'done')), ('mail_reminder_confirmed', '=', True), ('date_planned', '=', False)]}" groups="stock.group_stock_manager" data-hotkey="o"/>
           </xpath>
           <xpath expr="//button[@name='button_cancel']" position="replace">
-              <button name="button_cancel" states="draft,to approve,sent,purchase" string="Cancel" type="object" data-hotkey="x" groups="purchase.group_purchase_manager"/>
+              <button name="button_cancel" states="draft,to approve,sent,purchase" string="Cancelar" type="object" data-hotkey="x" groups="purchase.group_purchase_manager"/>
           </xpath>
 
           <xpath expr="//button[@name='button_done']" position="replace">
-              <button name="button_done" type="object" string="Lock" states="purchase" data-hotkey="l" groups="purchase.group_purchase_manager"/>
+              <button name="button_done" type="object" string="Bloquear" states="purchase" data-hotkey="l" groups="purchase.group_purchase_manager"/>
           </xpath>
 
 
